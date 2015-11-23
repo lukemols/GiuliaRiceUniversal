@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GiuliaRiceUniversal", "GiuliaRiceUniversal\GiuliaRiceUniversal.shproj", "{0182E5FE-7DAC-4454-BE48-AC96A1613005}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rice81", "Rice81\Rice81.csproj", "{99E4A30B-6AD4-48B3-B052-6FE2CB06AA76}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		GiuliaRiceUniversal\GiuliaRiceUniversal.projitems*{99e4a30b-6ad4-48b3-b052-6fe2cb06aa76}*SharedItemsImports = 4
+		GiuliaRiceUniversal\GiuliaRiceUniversal.projitems*{0182e5fe-7dac-4454-be48-ac96a1613005}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99E4A30B-6AD4-48B3-B052-6FE2CB06AA76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99E4A30B-6AD4-48B3-B052-6FE2CB06AA76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99E4A30B-6AD4-48B3-B052-6FE2CB06AA76}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{99E4A30B-6AD4-48B3-B052-6FE2CB06AA76}.Debug|ARM.ActiveCfg = Debug|ARM
+		{99E4A30B-6AD4-48B3-B052-6FE2CB06AA76}.Debug|ARM.Build.0 = Debug|ARM
+		{99E4A30B-6AD4-48B3-B052-6FE2CB06AA76}.Debug|ARM.Deploy.0 = Debug|ARM
+		{99E4A30B-6AD4-48B3-B052-6FE2CB06AA76}.Debug|x86.ActiveCfg = Debug|x86
+		{99E4A30B-6AD4-48B3-B052-6FE2CB06AA76}.Debug|x86.Build.0 = Debug|x86
+		{99E4A30B-6AD4-48B3-B052-6FE2CB06AA76}.Debug|x86.Deploy.0 = Debug|x86
+		{99E4A30B-6AD4-48B3-B052-6FE2CB06AA76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99E4A30B-6AD4-48B3-B052-6FE2CB06AA76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99E4A30B-6AD4-48B3-B052-6FE2CB06AA76}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{99E4A30B-6AD4-48B3-B052-6FE2CB06AA76}.Release|ARM.ActiveCfg = Release|ARM
+		{99E4A30B-6AD4-48B3-B052-6FE2CB06AA76}.Release|ARM.Build.0 = Release|ARM
+		{99E4A30B-6AD4-48B3-B052-6FE2CB06AA76}.Release|ARM.Deploy.0 = Release|ARM
+		{99E4A30B-6AD4-48B3-B052-6FE2CB06AA76}.Release|x86.ActiveCfg = Release|x86
+		{99E4A30B-6AD4-48B3-B052-6FE2CB06AA76}.Release|x86.Build.0 = Release|x86
+		{99E4A30B-6AD4-48B3-B052-6FE2CB06AA76}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

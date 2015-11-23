@@ -1,0 +1,64 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Rice81.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True">
+            <shell:ApplicationBarIconButton IconUri="/Icons/ApplicationBar.Next.png"
+            Text="Inizia" Click="ApplicationBarIconButton_Click"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+    
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <ScrollViewer>
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="RICE 8.1" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
+            <TextBlock Text="home page" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+
+            
+            <TextBlock Text="File disponibili:" FontSize="25"/>
+            <phone:LongListSelector x:Name="FileList"
+                                    IsGroupingEnabled="False"
+                                    FontSize="35"
+                                    SelectionChanged="FileList_SelectionChanged"/>
+
+            <TextBlock Text="Scegli espressioni:" FontSize="25"/>
+            <toolkit:MultiselectList x:Name="MultiSelect">
+                
+                <CheckBox Content="Grammar"/>
+                <CheckBox Content="Idiomatic"/>
+                <CheckBox Content="Multiple"/>
+                <CheckBox Content="Paraphrasing"/>
+                <CheckBox Content="Phrasal"/>
+                <CheckBox Content="Verb"/>
+                <CheckBox Content="Vocabulary"/>
+               
+            </toolkit:MultiselectList>
+
+
+            <!--ItemTemplate="{StaticResource FileItemTemplate}"-->
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>
